@@ -3,7 +3,7 @@ services:
   mariadb:
     image: bitnami/mariadb:latest
     environment:
-      - MYSQL_ROOT_PASSWORD: password
+      - ALLOW_EMPTY_PASSWORD=yes
       - MARIADB_USER=bn_moodle
       - MARIADB_PASSWORD=bitnami
       - MARIADB_DATABASE=bitnami_moodle
